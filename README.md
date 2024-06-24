@@ -18,3 +18,18 @@ This project will equip Netflix with data-driven insights to:
 1. Identify popular content and viewer preferences.
 2. Personalize recommendations and optimize content delivery.
 3. Improve content engagement and subscriber experience.
+
+
+**Questions from Data:**
+<p>1. What were the top 10 movies according to IMDB score?
+
+SELECT title, type, imdb_score 
+FROM netflix.movies_shows
+WHERE imdb_score>8.0
+AND type = 'Movie'
+ORDER BY imdb_score DESC
+LIMIT 10;
+</p>
+
+![image](https://github.com/Tripti-Jain-15/Netflix-Movies-Analysis/assets/129984766/7c4a6ce0-a096-46f1-8023-552cb079cf24)
+
